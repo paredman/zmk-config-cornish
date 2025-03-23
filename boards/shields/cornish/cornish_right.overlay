@@ -25,5 +25,4 @@
 
 &right_encoder {
     status = "okay";
-    binding = <&inc_dec_kp PG_UP PG_DN>;
 };
