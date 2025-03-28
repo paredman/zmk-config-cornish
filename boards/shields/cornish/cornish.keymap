@@ -65,14 +65,14 @@
 //                      &kp C_MUTE &kp LCTRL &trans   &kp LCMD   &kp SPC   &trans    &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 //                        >;
 // -----------------------------------------------------------------------------------------
-// |  ESC |     |     |     |     |     |   |  `  |  ~  |  *  |  (  |  )  | BSPC |
-// | TAB  | BT1 | BT2 | BT3 | BT4 | BT5 |   |left |down |  up |right| SQT |  ENT |
-// | SHFT |BTCLR|     |     |     |     |   |     |     |     |     |     | SHFT |
+// |  ESC |BTCLR|     |     |     |     |   |  `  |  ~  |  *  |  (  |  )  | BSPC |
+// | TAB  |     |     |     |     |     |   |left |down |  up |right| SQT |  ENT |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     | SHFT |
 //              | MTE | CTRL|     | CMD |   | SPC |     | ALT |EXPL
                         bindings = <
-   &kp ESC   &trans       &trans       &trans       &trans       &trans            &kp GRAVE &kp TILDE &kp ASTRK &kp LPAR  &kp RPAR &kp DEL
-   &kp TAB   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT  &kp RET
-   &kp LSHFT &bt BT_CLR   &trans       &trans       &trans       &trans            &trans    &trans    &trans    &trans    &trans   &kp RSHFT
+   &kp ESC   &bt BT_CLR &trans &trans &trans &trans      &kp GRAVE &kp TILDE &kp ASTRK &kp LPAR  &kp RPAR &kp DEL
+   &kp TAB   &trans     &trans &trans &trans &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT  &kp RET
+   &kp LSHFT &trans     &trans &trans &trans &trans      &trans    &trans    &trans    &trans    &trans   &kp RSHFT
                       &kp C_MUTE &kp LCTRL &trans   &kp LCMD   &kp SPC   &trans    &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
