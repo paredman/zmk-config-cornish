@@ -45,7 +45,7 @@
 //              | MTE | CTRL|     | CMD |   | SPC |     | ALT | EXPL
                         bindings = <
    &kp ESC    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp PLUS  &kp ASTRK &kp LBKT &kp RBKT &kp PIPE  &kp BSPC
-   &kp TAB    &kp N1   &kp N2 &kp n3   &kp N4   &kp N5         &kp MINUS &kp FSLH  &kp LPAR &kp RPAR &kp AMPS  &kp RET
+   &kp TAB    &kp N1   &kp N2 &kp N3   &kp N4   &kp N5         &kp MINUS &kp FSLH  &kp LPAR &kp RPAR &kp AMPS  &kp RET
    &kp LSHFT  &kp N6   &kp N7 &kp N8   &kp N9   &kp N0         &kp UNDER &KP EQUAL &kp LBRC &kp RBRC &kp BSLH  &kp RSHFT
                            &kp C_MUTE  &kp LCTRL  &trans       &kp LCMD      &kp SPC  &trans   &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
                         >;
