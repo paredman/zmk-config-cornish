@@ -17,12 +17,12 @@
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  ENT |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//              | MTE | CTRL | LWR | CMD |   | SPC | RSE  | ALT |EXPL|
+//              | MTE | CTRL | CMD | LWR |   | RSE | SPC  | ALT |EXPL|
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                &kp C_MUTE &kp LCTRL &mo 1 &kp LCMD   &kp SPC &mo 2 &kp RALT &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
+                &kp C_MUTE &kp LCTRL &kp LCMD &mo 1  &mo 2 &kp SPC &kp RALT &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
                 };
@@ -42,12 +42,12 @@
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  +  |  *  |  [  |  ]  | "|" | BSPC |
 // | TAB  |  1  |  2  |  3  |  4  |  5  |   |  -  |  /  |  (  |  )  |  &  | ENT  |
 // | SHFT |  6  |  7  |  8  |  9  |  0  |   |  _  |  =  |  {  |  }  |  \  | SHFT |
-//              | MTE | CTRL|     | CMD |   | SPC |     | ALT | EXPL
+//              | MTE | CTRL| CMD |     |   |     | SPC | ALT | EXPL
                         bindings = <
    &kp ESC    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp PLUS  &kp ASTRK &kp LBKT &kp RBKT &kp PIPE  &kp BSPC
    &kp TAB    &kp N1   &kp N2 &kp N3   &kp N4   &kp N5         &kp MINUS &kp FSLH  &kp LPAR &kp RPAR &kp AMPS  &kp RET
    &kp LSHFT  &kp N6   &kp N7 &kp N8   &kp N9   &kp N0         &kp UNDER &kp EQUAL &kp LBRC &kp RBRC &kp BSLH  &kp RSHFT
-                           &kp C_MUTE  &kp LCTRL  &trans       &kp LCMD      &kp SPC  &trans   &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
+                           &kp C_MUTE  &kp LCTRL  &kp LCMD       &trans      &trans  &kp SPC   &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
                 };
@@ -68,12 +68,12 @@
 // |  ESC |BTCLR|BTCLR|BTCLA|     |     |   |  `  |  ~  |  *  |  (  |  )  | BSPC |
 // | TAB  |     |     |     |     |     |   |left |down |  up |right| SQT |  ENT |
 // | SHFT |     |     |     |     |     |   |     |     |     |     | DQT  | SHFT |
-//              | MTE | CTRL|     | CMD |   | SPC |     | ALT |EXPL
+//              | MTE | CTRL| CMD |     |   |     | SPC | ALT |EXPL
                         bindings = <
    &kp ESC   &bt BT_CLR &bt BT_CLR_ALL &trans &trans &trans      &kp GRAVE &kp TILDE &kp ASTRK &kp LPAR  &kp RPAR &kp DEL
    &kp TAB   &trans     &trans         &trans &trans &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT  &kp RET
    &kp LSHFT &trans     &trans         &trans &trans &trans      &trans    &trans    &trans    &trans    &kp DQT   &kp RSHFT
-                      &kp C_MUTE &kp LCTRL &trans   &kp LCMD   &kp SPC   &trans    &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
+                      &kp C_MUTE &kp LCTRL &kp LCMD   &trans   &trans   &kp SPC    &kp RALT  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
                 };
