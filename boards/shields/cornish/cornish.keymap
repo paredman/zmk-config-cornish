@@ -28,12 +28,12 @@
                 };
                 lower_layer {
                         // -----------------------------------------------------------------------------------------
-                        // |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  | BKSP  |
+                        // |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  =  | BKSP  |
                         // | TAB  |  1  |  2  |  3  |  4  |  5  |   |  _  |  (  |  )  |  "  |  '  | ENT  |
                         // | SHFT |  6  |  7  |  8  |  9  |  0  |   | "|" |  [  |  ]  |  .  |  \  | SHFT |
                         //              | MTE | ALT | CMD |     |   |     | SPC | CTRL| EXPL
                         bindings = <
-                            &kp ESC    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp MINUS &kp EQUAL  &kp BKSP
+                            &kp GRAVE    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp MINUS &kp EQUAL  &kp BKSP
                             &kp TAB    &kp N1   &kp N2 &kp N3   &kp N4   &kp N5         &kp UNDER &kp LPAR &kp RPAR  &kp DQT   &kp SQT    &kp RET
                             &kp LSHFT  &kp N6   &kp N7 &kp N8   &kp N9   &kp N0         &kp PIPE    &kp LBKT &kp RBKT  &kp DOT  &kp BSLH   &kp RSHFT
                                                     &kp C_MUTE  &kp LALT  &kp LCMD       &trans      &trans  &kp SPC   &kp RCTRL  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
